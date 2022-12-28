@@ -3,9 +3,7 @@
 */
 [mitm] 
 hostname = *.sutanapp.*
-var obj = JSON.parse($response.body);
-    obj.data.= 1,;
-obj.data.1= 1;
-obj.data.vip= 1;
-obj.data.subVip= 1;
-    $done({body: JSON.stringify(obj)});
+var body=$response.body;
+body = body.replace(/subVip\":0/g,'subVip":1');
+body = body.replace(/\":0,'":1,');
+$done(body);
