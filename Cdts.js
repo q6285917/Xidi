@@ -20,20 +20,6 @@ Surge
 [MITM]
 hostname = *.sutanapp.*
 
-*******************************/
-var obj = JSON.parse($response.body);
-    obj.data.= 1,;
-obj.data.1= 1;
-obj.data.vip= 1;
-obj.data.subVip= 1;
-    $done({body: JSON. /*******************************
-⚠️🛝此捷径仅适用于本地重写⚠️🛝
-  🧚🏻‍♂️作者：🍡魔法师🍡
-  🎈交流群：993539991
-🫧脚本名称:滴滴
-🫧建议配合working copy一起食用
-✈️下载地址https://apps.apple.com/app/id896694807✈️
-*******************************/
 var body=$response.body;
 body = body.replace(/subVip\":0/g,'subVip":1');
 body = body.replace(/\":0,'":1,');
