@@ -21,8 +21,8 @@ Surge
 hostname = *.sutanapp.*
 
 *******************************/
-var obj = JSON.parse($response.body);
-    obj.data.subVip= 1;
-obj.data.= 1,;
-    $done({body: JSON.stringify(obj)});
+
+var body=$response.body;
+body = body.replace(/\":0,'":1,');
+$done(body);
 
