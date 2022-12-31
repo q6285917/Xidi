@@ -8,6 +8,6 @@ hostname = *.sutanapp.*
 
 
 var body=$response.body;
-body = body.replace(/\":0/g,'":1,');
+body = body.replace(/\":0,/g,'":1,');
 $done(body);
 
